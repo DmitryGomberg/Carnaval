@@ -1,0 +1,229 @@
+body {
+   font-family: Roboto;
+   font-weight: 400;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1680px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.header {
+   padding: 16px 0;
+   background-color: #fff;
+}
+
+.header>.container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.menu__list {
+   display: flex;
+   align-items: flex-start;
+   transition: all .2s ease;
+}
+
+.header__logo>img {
+   width: 100%;
+}
+
+.menu__list>li {
+   list-style-type: none;
+}
+
+.menu__link {
+   margin: 0px 0px 0px 40px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 21px;
+   color: #33352F;
+   transition: color .2s ease;
+}
+
+.menu__link:hover {
+   color: #bb610c;
+}
+
+.menu__icon {
+   position: absolute;
+   top: 50%;
+   right: 40px;
+   transform: translateY(-50%);
+   width: 50px;
+   height: 40px;
+   display: none;
+   cursor: pointer;
+}
+
+.menu__list.active {
+   transform: translateX(0);
+}
+
+.menu__icon>span {
+   position: absolute;
+   height: 6px;
+   width: 100%;
+   background-color: #bb610c;
+   transition: all .2s ease;
+}
+
+.menu__icon>span:nth-child(1) {
+   bottom: 0;
+}
+
+.menu__icon>span:nth-child(2) {
+   bottom: 50%;
+   transform: translateY(50%);
+}
+.menu__icon.active{
+   z-index: 4;
+}
+.menu__icon.active>span:nth-child(1) {
+   bottom: 17px;
+   transform: rotate(45deg);
+}
+
+.menu__icon.active>span:nth-child(2) {
+   transform: scale(0);
+}
+
+.menu__icon.active>span:nth-child(3) {
+   top: 17px;
+   transform: rotate(-45deg);
+}
+
+@media(max-width: 1150px) {
+   .menu__icon {
+      display: block;
+   }
+
+   .menu__list {
+      transform: translateX(-100%);
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.863);
+      margin: 0;
+      flex-direction: column;
+      padding-top: 50px;
+      overflow: auto;
+      z-index: 3;
+   }
+
+   .menu__list>li {
+      margin-bottom: 20px;
+   }
+   .menu__link {
+      font-size: 24px;
+      line-height: 26px;
+   }
+   .header {
+      padding: 5px 0;
+      background-color: #fff;
+   }
+   .header__logo>a>img{
+      width: 70%;
+   }
+}
+
+@media(max-width: 470px){
+   .menu__list {
+      padding-top: 102px;
+   }
+   .menu__link{
+      margin: 0px;
+   }
+   .menu__icon {
+      width: 45px;
+      height: 33px;
+   }  
+   .menu__icon.active>span:nth-child(1) {
+      bottom: 13px;
+      transform: rotate(45deg);
+   }
+   .menu__icon.active>span:nth-child(3) {
+      top: 14px;
+      transform: rotate(-45deg);
+   }
+}
+
+.s1 {
+   width: 100%;
+   background-image: url('../img/s1_bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 530px;
+}
+.s1>.container {
+   max-width: 1920px;
+   padding: 0;
+   
+}
+.s1_wrapper {
+   min-height: 530px;
+   background: rgba(241, 241, 241, 0.72);
+   backdrop-filter: blur(24px);
+   padding: 150px 100px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   max-width: 752px;
+}
+.s1__wrapper-title {
+   font-weight: 500;
+   font-size: 64px;
+   line-height: 62px; 
+}
+.s1__wrapper-text {
+   font-size: 32px;
+   line-height: 41px; 
+}
+@media(max-width: 1150px){
+   .s1_wrapper {
+      min-height: 530px;
+      background: rgba(241, 241, 241, 0.72);
+      backdrop-filter: blur(24px);
+      padding: 150px 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 70%;
+   }
+}
+
+@media(max-width: 760px){
+   .s1_wrapper {
+      padding: 125px 27px;
+      text-align: center;
+      max-width: 100%;
+   }
+   .s1__wrapper-text {
+      font-size: 23px;
+      line-height: 30px;
+   }
+   .s1__wrapper-title {
+      font-weight: 500;
+      font-size: 52px;
+      line-height: 64px;
+   }
+   .s1_wrapper,
+   .s1{
+      min-height: 403px;
+   }
+}

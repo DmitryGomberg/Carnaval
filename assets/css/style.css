@@ -346,7 +346,8 @@ body {
    background-color: #fff;
 }
 .s3>.container,
-.s4>.container{
+.s4>.container,
+.s5>.container{
    max-width: 1680px;
    margin: 0 auto;
    padding: 0 20px;
@@ -509,4 +510,64 @@ body {
    .s4__category:hover{
       transform: scale(1.05)
    }
+}
+
+.s5 {
+   width: 100%;
+   padding: 20px 0;
+}
+.s5__head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.title {
+}
+.s5__title {
+}
+.s5__but {
+   background: #29ABE2;
+   border-radius: 8px;
+   padding: 16px;
+   font-family: Roboto;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 30px;
+   color: #FFFFFF; 
+}
+@media(min-width: 991px){
+   .s5__but:hover{
+      text-decoration: underline;
+   }
+}
+
+.s5__letters {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin-top: 50px;
+}
+.s5__letter-item {
+   display: inline-flex;
+   align-items: center;
+   text-decoration: none;
+   height: 62px;
+   margin: 0px 50px 40px 0px;
+   transition: color .2s ease;
+}
+.letter-main:hover{
+   color: #bb610c;
+}
+.letter {
+}
+.letter-main {
+   font-size: 64px;
+   line-height: 62px;
+   color: #7C7478; 
+}
+.letter-number {
+   font-size: 24px;
+   color: #33352F;
 }

@@ -363,14 +363,15 @@ body {
    line-height: 62px;
    color: #33352F;
 }
-.s3__title {
-}
 .s3__but {
    font-family: Roboto;
    font-size: 24px;
    line-height: 30px;
    color: #7C7478;
    text-decoration: none;
+}
+.s3__but:hover{
+   text-decoration: underline;
 }
 .s3__cards {
    text-align: center;
@@ -399,6 +400,7 @@ body {
    font-size: 32px;
    line-height: 41px;
    color: #33352F;
+   cursor: pointer;
 }
 .s3__more.hide{
    display: none;
@@ -432,6 +434,10 @@ body {
    color: #33352F; 
    position: relative;
    width: 100%;
+   text-decoration: none;
+}
+.s3__content-text:hover {
+   text-decoration: underline;
 }
 .s3__content-text::after{
    content: "";

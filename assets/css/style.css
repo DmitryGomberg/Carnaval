@@ -194,7 +194,7 @@ body {
    line-height: 41px; 
 }
 @media(max-width: 1150px){
-   .s1_wrapper {
+   .s1__wrapper {
       min-height: 530px;
       background: rgba(241, 241, 241, 0.72);
       backdrop-filter: blur(24px);

@@ -352,7 +352,8 @@ body {
 .s3>.container,
 .s4>.container,
 .s5>.container,
-.s6>.container{
+.s6>.container,
+.s7>.container{
    max-width: 1680px;
    margin: 0 auto;
    padding: 0 20px;
@@ -425,7 +426,12 @@ body {
    height: 100%;
 }
 .s3__image>img{
-   width: 100%;
+   height: 100%;
+}
+@media(max-width: 630px){
+   .s3__image>img{
+      width: 100%;
+   }
 }
 .s3__content {
    position: absolute;
@@ -632,7 +638,6 @@ body {
 
 .s6 {
    width: 100%;
-   padding-bottom: 100px;
 }
 .s6>.container{
    display: flex;
@@ -689,4 +694,7 @@ body {
    .s6__look>a{
       left: 16px;
    }
+}
+.s7{
+   padding-bottom: 80px;
 }

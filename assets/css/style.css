@@ -428,11 +428,7 @@ body {
 .s3__image>img{
    height: 100%;
 }
-@media(max-width: 630px){
-   .s3__image>img{
-      width: 100%;
-   }
-}
+
 .s3__content {
    position: absolute;
    bottom: 0;
@@ -697,4 +693,17 @@ body {
 }
 .s7{
    padding-bottom: 80px;
+}
+.footer{
+   height: 100px;
+   background: #E6E6E6; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 30px;
+   color: #7C7478; 
+   padding: 0 20px;
+   text-align: center;
 }

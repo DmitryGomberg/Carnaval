@@ -1210,3 +1210,41 @@ li.slick-active {
 .more{
    min-width: 0;
 }
+@media(max-width: 1680px){
+   .header {
+      padding: 0;
+      background-color: #fff;
+   }
+   .s2__card::before {
+      position: absolute;
+      font-weight: bold;
+      font-size: 170px;
+      line-height: 220px;
+      color: #29ABE2;
+      left: -42px;
+      top: -20px;
+   }
+   .s3>.container,
+   .s4>.container,
+   .s5>.container,
+   .s6>.container,
+   .s7>.container, 
+   .s1__path>.container, 
+   .s2__main>.container {
+      max-width: 1680px;
+      margin: 0 auto;
+      padding: 0 30px;
+   }
+   .s3 {
+      padding-top: 0;   
+   }
+   .s3__card {
+      width: 273px;
+   }
+   .s4__category {
+      padding: 28px 59px;
+   }
+   .s5 {
+      padding-top: 0;
+   }
+}
